@@ -84,7 +84,6 @@ const FarmerRegister = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      Farmer Registration
       <input
         name="name"
         placeholder="Name"
@@ -220,7 +219,6 @@ const BuyerRegister = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      Buyer Registration
       <input
         name="name"
         placeholder="Name"
