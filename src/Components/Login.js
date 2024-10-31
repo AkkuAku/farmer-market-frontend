@@ -1,6 +1,7 @@
 // Login.js
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+
 import icon from "../Assets/farm 1.png";
 import "../Styles/Login.css";
 
@@ -58,8 +59,8 @@ const Login = () => {
 
   return (
     <div className="login">
-      <img src={icon} alt="icon"></img>
-      <div className="l1">Farmer market</div>
+      <img className="logo" src={icon} alt="icon"></img>
+      <div className="h1">Farmer market</div>
       <form onSubmit={handleSubmit}>
         <input
           name="email"
@@ -77,7 +78,7 @@ const Login = () => {
           value={formData.password}
           onChange={handleChange}
         />
-        <label>
+        <label className="show">
           <input
             type="checkbox"
             checked={showPassword}
@@ -88,8 +89,9 @@ const Login = () => {
         <button type="submit">Login</button>
         {errorMessage && <p style={{ color: "red" }}>{errorMessage}</p>}
       </form>
-      <div className="btn reg-btn" onClick={() => navigate("/register")}>
-        Register
+      <div className="reg-text">
+        Don’t you have an account?{" "}
+        <span onClick={() => navigate("/register")}>Sign up</span>
       </div>
     </div>
   );

@@ -1,9 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 .login {
-  padding-top: 133px;
+  padding-top: 100px;
   text-align: center;
 }
 
-.login .l1 {
+.login .logo {
+  margin-bottom: 25px;
+}
+
+.login .h1 {
   color: #000;
   font-family: "Inter";
   font-size: 22px;
@@ -12,5 +18,73 @@
   line-height: normal;
   letter-spacing: 5.5px;
   text-transform: uppercase;
-  margin-top: 50px;
+
+  margin-bottom: 60px;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login input {
+  width: 350px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  padding-left: 20px;
+
+  fill: #f3f1f1;
+  stroke-width: 1px;
+  stroke: #000;
+
+  color: #474747;
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-bottom: 20px;
+}
+
+.login .show input {
+  width: 15px;
+  height: 15px;
+}
+
+.login button {
+  display: flex;
+  width: 118px;
+  height: 36px;
+  padding: 11px 32px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 9px;
+  background: #659447;
+
+  color: #fff;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.login .reg-text {
+  color: #434343;
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.login .reg-text span {
+  color: #659447;
 }

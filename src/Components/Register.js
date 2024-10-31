@@ -254,7 +254,7 @@ const BuyerRegister = () => {
           value={formData.deliveryAddress}
           onChange={handleChange}
         />
-        <div>
+        <div className="payment">
           <label>Payment Method:</label>
           {paymentOptions.map((method, index) => (
             <label key={index}>
@@ -278,7 +278,7 @@ const BuyerRegister = () => {
           value={formData.password}
           onChange={handleChange}
         />
-        <label>
+        <label className="show">
           <input
             type="checkbox"
             checked={showPassword}
