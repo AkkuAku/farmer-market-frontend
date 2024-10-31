@@ -75,6 +75,7 @@
   border: none;
   margin-top: 20px;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .login .reg-text {
@@ -85,6 +86,8 @@
   font-weight: 700;
   line-height: normal;
 }
+
 .login .reg-text span {
   color: #659447;
+  cursor: pointer;
 }
