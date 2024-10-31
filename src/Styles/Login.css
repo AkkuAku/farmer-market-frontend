@@ -1,0 +1,16 @@
+.login {
+  padding-top: 133px;
+  text-align: center;
+}
+
+.login .l1 {
+  color: #000;
+  font-family: "Inter";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 5.5px;
+  text-transform: uppercase;
+  margin-top: 50px;
+}

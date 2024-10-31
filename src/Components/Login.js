@@ -1,11 +1,13 @@
 // Login.js
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import icon from "../Assets/farm 1.png";
+import "../Styles/Login.css";
 
 const Login = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    nameOrPass: "",
+    email: "",
     password: "",
   });
   const [showPassword, setShowPassword] = useState(false);
@@ -27,10 +29,7 @@ const Login = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          email: formData.nameOrPass,
-          password: formData.password,
-        }),
+        body: JSON.stringify(formData),
       });
 
       const data = await response.json();
@@ -58,15 +57,16 @@ const Login = () => {
   };
 
   return (
-    <>
+    <div className="login">
+      <img src={icon} alt="icon"></img>
+      <div className="l1">Farmer market</div>
       <form onSubmit={handleSubmit}>
-        Login
         <input
-          name="nameOrPass"
-          placeholder="Username / Email"
+          name="email"
+          placeholder="Email"
           type="email"
           required
-          value={formData.nameOrPass}
+          value={formData.email}
           onChange={handleChange}
         />
         <input
@@ -91,7 +91,7 @@ const Login = () => {
       <div className="btn reg-btn" onClick={() => navigate("/register")}>
         Register
       </div>
-    </>
+    </div>
   );
 };
 

@@ -1,29 +1,144 @@
-form {
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.reg-page {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.reg-page .logo {
+  margin-bottom: 25px;
+}
+
+.reg-page .h1 {
+  color: #000;
+  font-family: "Inter";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 5.5px;
+  text-transform: uppercase;
+
+  margin-bottom: 60px;
+}
+
+.reg-page .options {
+  display: flex;
+  justify-content: center;
+  gap: 158px;
+
+  margin-bottom: 46px;
+}
+
+.reg-page .options .btn .txt {
+  color: #000;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.16px;
+
+  cursor: pointer;
+}
+
+.reg-page .options .btn.active .txt {
+  color: #659447;
+}
+
+.reg-page .options .btn .line {
+  width: 90px;
+  height: 2px;
+  background: #659447;
+  display: none;
+  margin-top: 8px;
+}
+
+.reg-page .options .btn.active .line {
+  display: block;
+}
+
+/* #### Farmer Reg Page ##### */
+.farm-reg form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  margin-top: 50px;
 }
 
-.reg-btn {
-  color: blue;
-  text-decoration: underline;
-  text-align: center;
+.farm-reg input {
+  width: 350px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  padding-left: 20px;
+
+  fill: #f3f1f1;
+  stroke-width: 1px;
+  stroke: #000;
+
+  color: #474747;
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-bottom: 10px;
+}
+
+.farm-reg .cropss {
+  color: #212121;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.farm-reg .crops input {
+  width: 15px;
+  height: 15px;
+}
+
+.farm-reg .show input {
+  width: 15px;
+  height: 15px;
+}
+
+.farm-reg button {
+  display: flex;
+  width: 152px;
+  height: 38px;
+  padding: 11px 32px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 9px;
+  background: #659447;
+  border: none;
+
+  color: #fff;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
   margin-top: 20px;
 }
 
-.options {
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-  margin-top: 100px;
+.reg-page .login-text {
+  color: #434343;
+  font-family: "Inter";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  margin-top: 40px;
 }
 
-.active {
-  color: green;
-}
-
-.btn {
+.reg-page .login-text span {
+  color: #659447;
   cursor: pointer;
 }
